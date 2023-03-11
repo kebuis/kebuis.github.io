@@ -1,195 +1,202 @@
+
 <!DOCTYPE html>
-
 <html lang="zh-CN">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Archives | kebuis&#39;s blog</title>
+        <meta name="author" content="kebuis" />
+        <meta name="description" content="" />
+        <meta name="keywords" content="" />
+        <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" />
+        <link rel="icon" href="/%5Cimages%5Cavatar.jpg" />
+        <script src="https://cdn.staticfile.org/vue/3.2.45/vue.global.prod.min.js"></script>
+<link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/6.2.1/css/all.min.css" />
+<link rel="stylesheet" href="/css/fonts.min.css" />
+<script> const mixins = {}; </script>
 
-<head>
-    
-    <title>文章归档 - kebuis&#39;s blog</title>
-    <meta charset="UTF-8">
-    <meta name="keywords" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
-    
-    
-
-    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
-    <meta property="og:type" content="website">
-<meta property="og:title" content="kebuis&#39;s blog">
-<meta property="og:url" content="http://example.com/archives/index.html">
-<meta property="og:site_name" content="kebuis&#39;s blog">
-<meta property="og:locale" content="zh_CN">
-<meta property="article:author" content="kebuis">
-<meta name="twitter:card" content="summary">
-    
-<link rel="stylesheet" href="/lib/fancybox/fancybox.css">
-<link rel="stylesheet" href="/lib/justifiedGallery/justifiedGallery.min.css">
-<link rel="stylesheet" href="/lib/mdui_043tiny/mdui.css">
+<script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
 
 
-    <link rel="stylesheet" href="/lib/iconfont/iconfont.css?v=1678520324220">
-    
-    <link rel="stylesheet" href="/css/style.css?v=1678520324220">
-    
-        <link rel="stylesheet" href="/custom.css?v=1678520324220">
-    
-<meta name="generator" content="Hexo 6.3.0"></head>
+<script src="https://cdn.staticfile.org/highlight.js/11.7.0/highlight.min.js"></script>
+<link
+    rel="stylesheet"
+    href="https://cdn.staticfile.org/highlight.js/11.7.0/styles/github.min.css"
+/>
+<script src="/js/lib/highlight.js"></script>
 
-<body class="mdui-drawer-body-left">
-    
-    <div id="nexmoe-background">
-        <div class="nexmoe-bg" style="background-image: url(https://cdn.jsdelivr.net/gh/nexmoe/nexmoe.github.io@latest/images/cover/5c3aec85a4343.jpg)"></div>
-        <div class="mdui-appbar mdui-shadow-0">
-            <div class="mdui-toolbar">
-                <a mdui-drawer="{target: '#drawer', swipe: true}" title="menu" class="mdui-btn mdui-btn-icon mdui-ripple"><i class="mdui-icon nexmoefont icon-menu"></i></a>
-                <div class="mdui-toolbar-spacer"></div>
-                <!--<a href="javascript:;" class="mdui-btn mdui-btn-icon"><i class="mdui-icon material-icons">search</i></a>-->
-                <a href="/" title="kebuis" class="mdui-btn mdui-btn-icon"><img src="https://img1.imgtp.com/2023/03/11/wEOlRBOP.jpg" alt="kebuis"></a>
-            </div>
-        </div>
-    </div>
-    <div id="nexmoe-header">
-        <div class="nexmoe-drawer mdui-drawer" id="drawer">
-    <div class="nexmoe-avatar mdui-ripple">
-        <a href="/" title="kebuis">
-            <img src="https://img1.imgtp.com/2023/03/11/wEOlRBOP.jpg" alt="kebuis" alt="kebuis">
-        </a>
-    </div>
-    <div class="nexmoe-count">
-        <div><span>文章</span>1</div>
-        <div><span>标签</span>0</div>
-        <div><span>分类</span>0</div>
-    </div>
-    <div class="nexmoe-list mdui-list" mdui-collapse="{accordion: true}">
-        
-        <a class="nexmoe-list-item mdui-list-item mdui-ripple false" href="/" title="回到首页">
-            <i class="mdui-list-item-icon nexmoefont icon-home"></i>
-            <div class="mdui-list-item-content">
-                回到首页
-            </div>
-        </a>
-        
-    </div>
-    <aside id="nexmoe-sidebar">
-    
-    <div class="nexmoe-widget-wrap">
-    <div class="nexmoe-widget nexmoe-search">
-         
-            <form id="search_form" action_e="https://cn.bing.com/search?q=site:nexmoe.com" onsubmit="return search();">
-                <label><input id="search_value" name="q" type="search" placeholder="搜索"></label>
-            </form>
-         
-    </div>
-</div>
-    
-    <div class="nexmoe-widget-wrap">
-    <div class="nexmoe-widget nexmoe-social">
-        <a class="mdui-ripple" href="https://space.bilibili.com/26213454" target="_blank" mdui-tooltip="{content: '哔哩哔哩'}" style="color: rgb(231, 106, 141);background-color: rgba(231, 106, 141, .15);">
-            <i class="nexmoefont icon-bilibili"></i>
-        </a><a class="mdui-ripple" href="https://github.com/kebuis" target="_blank" mdui-tooltip="{content: 'GitHub'}" style="color: rgb(25, 23, 23);background-color: rgba(25, 23, 23, .15);">
-            <i class="nexmoefont icon-github"></i>
-        </a>
-    </div>
-</div>
-    
-    
 
-    
-    
-    
-</aside>
-    <div class="nexmoe-copyright">
-        &copy; 2023 kebuis
-        Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
-        & <a href="https://github.com/theme-nexmoe/hexo-theme-nexmoe" target="_blank">Nexmoe</a>
-        
-    </div>
-</div><!-- .nexmoe-drawer -->
-    </div>
-    <div id="nexmoe-content">
-        <div class="nexmoe-primary">
-            <section class="nexmoe-posts">
-    
-    <div class="nexmoe-post">
-        <a href="/2023/03/11/Hello,world/">
-            
-                <div class="nexmoe-post-cover mdui-ripple" style="padding-bottom: 66.66666666666666%;"> 
-                    <img src="https://cdn.jsdelivr.net/gh/nexmoe/nexmoe.github.io@latest/images/cover/5c3aec85a4343.jpg" alt="Hello,world" loading="lazy">
-                    <h1>Hello,world</h1>
+<script src="https://cdn.staticfile.org/KaTeX/0.16.4/katex.min.js"></script>
+<script src="https://cdn.staticfile.org/KaTeX/0.16.4/contrib/auto-render.min.js"></script>
+<link rel="stylesheet" href="https://cdn.staticfile.org/KaTeX/0.16.4/katex.min.css" />
+<script src="/js/lib/math.js"></script>
+
+
+<script src="/js/lib/preview.js"></script>
+
+
+
+
+
+<script src="/js/lib/home.js"></script>
+
+<link rel="stylesheet" href="/css/main.css" />
+
+    <meta name="generator" content="Hexo 6.3.0"></head>
+    <body>
+        <div id="layout">
+            <transition name="fade">
+            <div id="loading" v-show="loading">
+                <div id="loading-circle">
+                    <h2>LOADING</h2>
+                    <p>加载过慢请开启缓存&ensp;浏览器默认开启</p>
+                    <img src="/images/loading.gif" />
                 </div>
-            
+            </div>
+            </transition>
+            <transition name="into">
+            <div id="main" v-show="!loading">
+                <nav id="menu" ref="menu">
+    <div class="desktop-menu">
+        <a class="title" href="/">
+            <span>KEBUIS&#39;S BLOG</span>
         </a>
-
-        <div class="nexmoe-post-meta nexmoe-rainbow">
-            <a><i class="nexmoefont icon-calendar-fill"></i>2023年03月11日</a>
+        
+        <a href="/">
+            <i class="fa-solid fa-house fa-fw"></i>
+            <span>&ensp;Home</span>
+        </a>
+        
+        <a href="/about">
+            <i class="fa-solid fa-id-card fa-fw"></i>
+            <span>&ensp;About</span>
+        </a>
+        
+        <a href="/archives">
+            <i class="fa-solid fa-box-archive fa-fw"></i>
+            <span>&ensp;Archives</span>
+        </a>
+        
+        <a href="/categories">
+            <i class="fa-solid fa-bookmark fa-fw"></i>
+            <span>&ensp;Categories</span>
+        </a>
+        
+        <a href="/tags">
+            <i class="fa-solid fa-tags fa-fw"></i>
+            <span>&ensp;Tags</span>
+        </a>
+        
+    </div>
+    <div id="mobile-menu">
+        <div class="curtain" v-show="showMenu" @click="showMenu = !showMenu"></div>
+        <div class="title" @click="showMenu = !showMenu">
+            <i class="fa-solid fa-bars fa-fw"></i>
+            <span>&emsp;KEBUIS&#39;S BLOG</span>
+        </div>
+        <transition name="slide">
+        <div class="items" v-show="showMenu">
             
+            <a href="/">
+                <div class="item">
+                    <div style="min-width: 20px; max-width: 50px; width: 10%">
+                        <i class="fa-solid fa-house fa-fw"></i>
+                    </div>
+                    <div style="min-width: 100px; max-width: 150%; width: 20%">Home</div>
+                </div>
+            </a>
+            
+            <a href="/about">
+                <div class="item">
+                    <div style="min-width: 20px; max-width: 50px; width: 10%">
+                        <i class="fa-solid fa-id-card fa-fw"></i>
+                    </div>
+                    <div style="min-width: 100px; max-width: 150%; width: 20%">About</div>
+                </div>
+            </a>
+            
+            <a href="/archives">
+                <div class="item">
+                    <div style="min-width: 20px; max-width: 50px; width: 10%">
+                        <i class="fa-solid fa-box-archive fa-fw"></i>
+                    </div>
+                    <div style="min-width: 100px; max-width: 150%; width: 20%">Archives</div>
+                </div>
+            </a>
+            
+            <a href="/categories">
+                <div class="item">
+                    <div style="min-width: 20px; max-width: 50px; width: 10%">
+                        <i class="fa-solid fa-bookmark fa-fw"></i>
+                    </div>
+                    <div style="min-width: 100px; max-width: 150%; width: 20%">Categories</div>
+                </div>
+            </a>
+            
+            <a href="/tags">
+                <div class="item">
+                    <div style="min-width: 20px; max-width: 50px; width: 10%">
+                        <i class="fa-solid fa-tags fa-fw"></i>
+                    </div>
+                    <div style="min-width: 100px; max-width: 150%; width: 20%">Tags</div>
+                </div>
+            </a>
             
         </div>
+        </transition>
+    </div>
+</nav>
 
-        <div class="nexmoe-post-meta nexmoe-rainbow" style="margin:10px 0!important;">
+                
+<div id="archives">
     
-        <a><i class="nexmoefont icon-areachart"></i>约13字</a>
-        <a><i class="nexmoefont icon-time-circle-fill"></i>预计需要1分钟</a>
-    
+    <div id="timeline-wrap" ref="timeline">
+        
+        <div class="timeline" data-title="hello,world">
+            <div class="timeline-tail"></div>
+            <div class="timeline-content">
+                <div class="item-time">2023/3/11</div>
+                <a href="/2023/03/11/Hello,world/">
+                    <h3>Hello,world</h3>
+                </a>
+                <div class="info">
+                    
+                    
+                </div>
+            </div>
+        </div>
+        
+    </div>
 </div>
 
-        <article>
+                <footer id="footer">
+    <div id="footer-wrap">
+        <div>
+            &copy;
+            2023 - 2023 kebuis&#39;s blog
+            <span id="footer-icon">
+                <i class="fa-solid fa-font-awesome fa-fw"></i>
+            </span>
+            &commat;kebuis
+        </div>
+        <div>
+            Based on the <a target="_blank" rel="noopener" href="https://hexo.io">Hexo Engine</a> &amp;
+            <a target="_blank" rel="noopener" href="https://github.com/argvchs/hexo-theme-particlex">ParticleX Theme</a>
+        </div>
+        
+    </div>
+</footer>
+
+            </div>
+            </transition>
             
-        </article>
-    </div>
-    
-</section>
-
-            <div class="nexmoe-post-right">
-              <div class="nexmoe-fixed">
-                  <div class="nexmoe-tool"> 
-                    
-                      
-                    
-                      <a href="#nexmoe-content" class="toc-link" aria-label="回到顶部" title="top"><button class="mdui-fab mdui-ripple"><i class="nexmoefont icon-caret-top"></i></button></a>
-                  </div>
-              </div>
+            <transition name="fade">
+            <div id="preview" ref="preview" v-show="previewShow">
+                <img id="preview-content" ref="previewContent" />
             </div>
+            </transition>
+            
         </div>
-    </div>
-     
-    <div id="nexmoe-search-space">
-        <div class="search-container">
-            <div class="search-header">
-                <div class="search-input-container">
-                    <input class="search-input" type="text" placeholder="搜索" oninput="sinput();">
-                </div>
-                <a class="search-close" onclick="sclose();">×</a>
-            </div>
-            <div class="search-body"></div>
-        </div>
-    </div>
-
-    
-<script src="/lib/mdui_043tiny/mdui.js"></script>
-<script src="/lib/jquery.min.js"></script>
-<script src="/lib/justifiedGallery/jquery.justifiedGallery.min.js"></script>
-<script src="/lib/fancybox/fancybox.umd.js"></script>
-
-
- 
-
-<script async src="/js/app.js?v=1678520324221"></script>
-
-
-
-<script>
-	$(".justified-gallery").justifiedGallery({
-		rowHeight: 160,
-		margins: 10,
-	});
-</script>
-
-
-    
-
-
-
-
-
-</body>
-
+        <script src="/js/main.js"></script>
+        
+    </body>
 </html>
