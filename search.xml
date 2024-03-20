@@ -4,11 +4,11 @@
   
     
     <entry>
-      <title>Hello,world</title>
+      <title>Hello,world!</title>
       <link href="/2023/03/11/Hello,world/"/>
       <url>/2023/03/11/Hello,world/</url>
       
-        <content type="html"><![CDATA[<p>今天重新建立了网站，以此纪念。</p>]]></content>
+        <content type="html"><![CDATA[<p><code>Hello,world!</code></p>]]></content>
       
       
       
