@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Posts on 怎么绘世呢？</title>
-    <link>https://kebuis.github.io/post/</link>
+    <link>http://localhost:1313/post/</link>
     <description>Recent content in Posts on 怎么绘世呢？</description>
     <generator>Hugo -- 0.139.3</generator>
     <language>zh</language>
     <copyright>KEBUIS</copyright>
     <lastBuildDate>Thu, 05 Dec 2024 21:20:22 +0800</lastBuildDate>
-    <atom:link href="https://kebuis.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/post/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>你好，世界</title>
-      <link>https://kebuis.github.io/post/hello/</link>
+      <link>http://localhost:1313/post/hello/</link>
       <pubDate>Thu, 05 Dec 2024 21:20:22 +0800</pubDate>
-      <guid>https://kebuis.github.io/post/hello/</guid>
+      <guid>http://localhost:1313/post/hello/</guid>
       <description>&lt;p&gt;你好，世界&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;hello,world&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;初めまして、世界&lt;/p&gt;
