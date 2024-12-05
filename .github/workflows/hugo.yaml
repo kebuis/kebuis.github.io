@@ -19,8 +19,8 @@ permissions:
 # Allow only one concurrent deployment, skipping runs queued between the run in-progress and latest queued.
 # However, do NOT cancel in-progress runs as we want to allow these production deployments to complete.
 concurrency:
-  group: "pages"
-  cancel-in-progress: false
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
 
 # Default to bash
 defaults:
@@ -41,6 +41,11 @@ jobs:
           submodules: false  # 确保不检出子模块
           fetch-depth: 0
 
+      - name: Set up Git configuration
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
         with:
@@ -58,16 +63,18 @@ jobs:
           HUGO_CACHEDIR: ${{ runner.temp }}/hugo_cache
           HUGO_ENVIRONMENT: production
           TZ: America/Los_Angeles
+          HUGO_BASEURL: ${{ steps.pages.outputs.base_url }}
         run: |
           hugo \
             --gc \
             --minify \
-            --baseURL "${{ steps.pages.outputs.base_url }}/"
+            --baseURL "${{ env.HUGO_BASEURL }}"
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
           path: ./public
+          artifact_name: my-site-artifact  # 使用唯一的名称
 
   # Deployment job
   deploy:
