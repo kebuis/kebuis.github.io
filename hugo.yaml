@@ -1,0 +1,170 @@
+# If your site is in 'https', then make sure your base url isn't written using 'http' otherwise your sitemap would
+# contain http (as opposeed to https) URLs. This would affect Google indexing of your URLs.
+baseURL: "https://kebuis.github.io/"
+title: 怎么绘世呢？
+copyright: "© [KEBUIS](https://github.com/adityatelange/hugo-PaperMod/graphs/contributors)"
+theme: ["PaperMod"]
+languageCode: zh
+paginate: 5
+
+enableInlineShortcodes: true # shortcode，类似于模板变量，可以在写 markdown 的时候便捷地插入，官方文档中有一个视频讲的很通俗
+hasCJKLanguage: true # 是否有 CJK 的字符
+enableRobotsTXT: true # 允许生成 robots.txt
+buildDrafts: true # 构建时是否包括草稿
+buildFuture: false # 构建未来发布的内容
+buildExpired: false # 构建过期的内容
+enableEmoji: true # 允许 emoji
+pygmentsUseClasses: true
+defaultContentLanguage: zh # 顶部首先展示的语言界面
+defaultContentLanguageInSubdir: false # 是否要在地址栏加上默认的语言代码
+
+minify:
+  disableXML: true
+  minifyOutput: true
+
+languages:
+  zh:
+    languageName: "中文" # 展示的语言名
+    weight: 1 # 权重
+    taxonomies: # 分类系统
+      category: categories
+      tag: tags
+    # https://gohugo.io/content-management/menus/#define-in-site-configuration
+    menus:
+      main:
+        - name: 首页
+          pageRef: /
+          weight: 4 # 控制在页面上展示的前后顺序
+        - name: 归档
+          pageRef: archives/
+          weight: 5
+        - name: 分类
+          pageRef: categories/
+          weight: 10
+        - name: 标签
+          pageRef: tags/
+          weight: 10
+        - name: 搜索
+          pageRef: search/
+          weight: 20
+        - name: 关于
+          pageRef: about/
+          weight: 21
+
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON
+
+params:
+  author: kebuis
+  # 搜索
+  fuseOpts:
+  isCaseSensitive: false # 是否大小写敏感
+  shouldSort: true # 是否排序
+  location: 0
+  distance: 1000
+  threshold: 0.4
+  minMatchCharLength: 0
+  # limit: 10 # refer: https://www.fusejs.io/api/methods.html#search
+  keys: ["title", "permalink", "summary", "content"]
+  includeMatches: true
+  assets:
+    disableHLJS: true
+    favicon: "favicon.png"
+    favicon16x16: "favicon.png"
+    favicon32x32: "favicon.png"
+    apple_touch_icon: "favicon.png"
+    safari_pinned_tab: "favicon.png"
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true # 可以 unsafe，有些 html 标签和样式可能需要
+  highlight:
+    anchorLineNos: false # 不要给行号设置锚标
+    codeFences: true # 代码围栏
+    noClasses: false # TODO: 不知道干啥的，暂时没必要了解，不影响展示
+    lineNos: false # 代码行
+    lineNumbersInTable: false # 不要设置成 true，否则如果文章开头是代码的话，摘要会由一大堆数字(即代码行号)开头文章
+    # 这里设置 style 没用，得自己加 css
+    # style: "github-dark"
+    # style: monokai
+
+
+  defaultTheme: auto
+  # disableThemeToggle: true
+  ShowShareButtons: true
+  ShowReadingTime: true
+  # disableSpecial1stPost: true
+  displayFullLangName: true
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: true
+  ShowRssButtonInSectionTermList: true
+  ShowAllPagesInArchive: true
+  ShowPageNums: true
+  ShowToc: true
+  # comments: false
+
+  homeInfoParams:
+    Title: "主页"
+    Content: >
+      -welcome
+
+  socialIcons:
+    - name: github
+      title: github
+      url: "https://github.com/kebuis"
+    - name: bilibili
+      title: bilibili
+      url: "https://space.bilibili.com/26213454"
+
+
+  #editPost:
+  #  URL: ""
+  #  Text: "Suggest Changes" # edit text
+  #  appendFilePath: true # to append file path to Edit link
+
+  # label:
+  # iconSVG: '<svg xmlns="http://www.w3.org/2000/svg" height="25" viewBox="0 -960 960 960" fill="currentColor"><path d="M320-240h320v-80H320v80Zm0-160h320v-80H320v80ZM240-80q-33 0-56.5-23.5T160-160v-640q0-33 23.5-56.5T240-880h320l240 240v480q0 33-23.5 56.5T720-80H240Zm280-520v-200H240v640h480v-440H520ZM240-800v200-200 640-640Z"/></svg>'
+  # text: "Home"
+  # icon: icon.png
+  # iconHeight: 35
+
+  # analytics:
+  #     google:
+  #         SiteVerificationTag: "XYZabc"
+
+  # cover:
+  #     hidden: true # hide everywhere but not in structured data
+  #     hiddenInList: true # hide on list pages and home
+  #     hiddenInSingle: true # hide on single page
+
+  # fuseOpts:
+  #     isCaseSensitive: false
+  #     shouldSort: true
+  #     location: 0
+  #     distance: 1000
+  #     threshold: 0.4
+  #     minMatchCharLength: 0
+  #     keys: ["title", "permalink", "summary", "content"]
+
+# privacy:
+#   vimeo:
+#     disabled: false
+#     simple: true
+
+#   twitter:
+#     disabled: false
+#     enableDNT: true
+#     simple: true
+
+#   instagram:
+#     disabled: false
+#     simple: true
+
+#   youtube:
+#     disabled: false
+#     privacyEnhanced: true
