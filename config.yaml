@@ -2,7 +2,7 @@
 # contain http (as opposeed to https) URLs. This would affect Google indexing of your URLs.
 baseURL: "https://kebuis.github.io/"
 title: 怎么绘世呢？
-copyright: "© [KEBUIS](https://github.com/adityatelange/hugo-PaperMod/graphs/contributors)"
+copyright: "© [KEBUIS](https://github.com/kebuis)"
 theme: ["PaperMod"]
 languageCode: zh
 paginate: 5
@@ -20,7 +20,7 @@ defaultContentLanguageInSubdir: false # 是否要在地址栏加上默认的语�
 
 minify:
   disableXML: true
-  minifyOutput: true
+  #minifyOutput: true
 
 languages:
   zh:
